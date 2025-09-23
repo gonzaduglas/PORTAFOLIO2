@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stilos.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio responsivo</title>
+        <link rel="icon" type="image/x-icon" href="marca.ico">
+        <style>
+body 
+{
+margin: 0; 
+font-family: Arial, sans-serif;
+background-color:rgba(24, 51, 39, 0.51);
+}
+      
+header 
+{
+background-color: #183327;
+color: #ffffff;
+text-align: center;
+padding: 10px; 
+}
+
+nav 
+{
+background-color: #000000;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+nav a
+{
+color: #ffffff;
+text-decoration: none;
+margin: 0 30px;
+font-weight: bold;
+}
+
+section 
+{
+display: flex; /*Activa flexbox*/
+justify-content: space-between; /*Espacio entre las secciones*/
+gap: 20px; /*Espacio uniforme entre las secciones*/
+flex-wrap: wrap; /*Permote que las secciones se apilen*/
+}
+
+/*Clases para estilo general para todas las secciones*/
+.izquierda,
+.centro,
+.derecha {
+padding: 20px;
+border-radius: 8px;
+box-sizing: border-box;  /*Asegura que el padding no afecte el ancho total*/
+}
+.izquierda {
+flex: 1; /*Ocupa el doble del espacio*/
+background-color: rgba(186, 215, 255, 0.65); /*Color de fondo*/
+margin: 20px;
+}
+
+.centro { 
+flex: 2; /*Ocupa el doble del espacio*/
+background-color: #8766bc; /*Color de fondo*/
+box-shadow: 0 2px 5px #303330;
+}
+
+.derecha {
+flex: 1; /*Ocupa una parte del espacio*/
+background-color: rgba(186, 215, 255, 0.42); /*Color de fondo*/
+margin: 20px;
+}
+
+iframe {
+width: 100%;
+height: 700px;
+border: none;
+border-radius: 12px;
+}
+
+footer {
+background-color: #000000;
+color: #ffffff;
+text-align: center;
+padding: 10px;
+position: relative;
+bottom: 0;
+width: 100%
+}
+
+/*Diseño responsivo*/
+@media (max-width:768px){
+.izquierda
+.centro
+.derecha
+{
+flex: 1 1 100%; /*Cda seccion ocupa el100% del ancho*/
+margin-bottom: 5px; /*Espaciado entre las secciones apiladas*/
+    }
+}
+</style>
+    </head>
+    
+<body>
+<header>
+    <img src="img/portada.png" alt="Logo portafolio" width="100%">
+    <h1> Portafolio personal de GONZALO DOUGLAS </h1>
+    <p> Diseñador grafico</p>
+    </header>
+        <nav> 
+            <a href="inicio.html" target="iframe-content">Inicio</a>
+            <a href="proyectos.html" target="iframe-content">Proyectos</a>
+            <a href="contactos.html" target="iframe-content">Contactos</a>
+        </nav>
+        
+        <section>
+            <div class="izquierda">
+                <h2>Enlaces Rapìdos</h2>
+                <ul style="list-style: none; padding: 0;">
+                <li><a href="proyecto1.html" target="iframe-content"> ver Proyecto 1 </a></li>
+                <li><a href="proyecto2.html" target="iframe-content"> ver Proyecto 2 </a></li>
+                <li><a href="proyecto3.html" target="iframe-content"> ver Proyecto 3 </a></li>
+                </ul>
+            </div>
+            
+            <div class="central">
+                <h2>Visualizador de Proyectos</h2>
+                <iframe name="iframe-content" title="contenido"
+                        src="proyecto1.html"></iframe>
+            </div>
+            
+            <div class="derecha">
+                <h2> Destacados</h2>
+                <article>
+                    <img src="img/INDICEEEEEE.png" alt="Imagen1" width="70%">
+                    <p> Sobre mi</p> 
+                </article>
+                <article>
+                    <img src="img/MUSICA.jpg" alt="Imagen2" width="50%">
+                    <p> Algunos proyectos</p> 
+                </article>
+                <article>
+                    <img src="img/12215.jpg" alt="Imagen2" width="70%">
+                    <p> Publicidad</p>
+                </article>
+            </div>  
+                        
+        </section>     
+        <footer>
+        <P> &copy; 2025 Mi portafolio - Todos los derechos reservados </P>
+    </footer>
+        
+    </body>
+        
+</html>

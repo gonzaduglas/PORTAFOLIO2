@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stilos.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio responsivo</title>
+        <style>
+body 
+{
+margin: 0; 
+font-family: Arial, sans-serif;
+background-color:rgba(24, 51, 39, 0.51);
+}
+      
+header 
+{
+background-color: #183327;
+color: #ffffff;
+text-align: center;
+padding: 10px; 
+}
+
+nav 
+{
+background-color: #000000;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+nav a
+{
+color: #ffffff;
+text-decoration: none;
+margin: 0 30px;
+font-weight: bold;
+}
+
+section 
+{
+display: flex; /*Activa flexbox*/
+justify-content: space-between; /*Espacio entre las secciones*/
+gap: 20px; /*Espacio uniforme entre las secciones*/
+flex-wrap: wrap; /*Permote que las secciones se apilen*/
+}
+
+/*Clases para estilo general para todas las secciones*/
+.izquierda,
+.centro,
+.derecha
+{
+padding: 20px;
+border-radius: 12px;
+box-sizing: border-box;  /*Asegura que el padding no afecte el ancho total*/
+}
+.izquierda
+{
+flex: 1; /*Ocupa el doble del espacio*/
+background-color: rgba(186, 215, 255, 0.65); /*Color de fondo*/
+margin: 20px;
+}
+
+.centro
+{ 
+flex: 2; /*Ocupa el doble del espacio*/
+background-color: #8766bc; /*Color de fondo*/
+box-shadow: 0 2px 5px rgba (0, 0, 0.1);
+}
+
+.derecha
+{
+flex: 1; /*Ocupa una parte del espacio*/
+background-color: rgba(186, 215, 255, 0.42); /*Color de fondo*/
+margin: 20px;
+}
+
+div {
+  border: 14px solid #ffffff;
+  margin-top: 40px;
+  margin-bottom: 13px;
+  margin-right: 30px;
+  margin-left:30px;
+    border-radius: 12px;
+  background-color: #ffffff;
+}
+            
+iframe 
+{
+width: 100%;
+height: 300px;
+border: none;
+border-radius: 12px;
+}
+
+footer 
+{
+background-color: #000000;
+color: #ffffff;
+text-align: center;
+padding: 10px;
+position: relative;
+bottom: 0;
+width: 100%
+}
+
+@media (max-width:768px){
+.izquierda
+.centro
+.derecha
+{
+flex: 1 1 100%;
+margin-bottom: 5px;
+ }
+}
+</style>
+    </head>
+    
+<body>
+<header>
+    <img src="img/portada.png" alt="Logo portafolio" width="100%">
+    <h1> Portafolio personal de GONZALO DOUGLAS </h1>
+    <p> Diseñador grafico</p>
+    </header>
+        <nav> 
+            <a href="proyecto1.html" target="iframe-content">Inicio</a>
+            <a href="proyecto2.html" target="iframe-content">Proyectos</a>
+            <a href="proyecto3.html" target="iframe-content">Contactos</a>
+        </nav>
+
+    <div class="contenedor">
+        <h2>Bienvenido a mi Portafolio</h2>
+        <p>
+            Hola, soy <strong>Gonzalo Douglas</strong>, diseñador gráfico apasionado por la creatividad y la innovación. 
+            En este portafolio encontrarás una selección de mis proyectos, que incluyen identidad visual, diseño editorial, 
+            propuestas digitales y trabajos destacados en diseño publicitario.
+        </p>
+        <p>
+            Mi objetivo es transmitir ideas y emociones a través del diseño, aportando soluciones visuales que combinan estética y funcionalidad. Te invito a explorar mis proyectos y conocer más sobre mi trabajo.
+        </p>
+    </div>
+<footer>
+        <P> &copy; 2025 Mi portafolio - Todos los derechos reservados </P>
+    </footer>
+</body>
+</html>
